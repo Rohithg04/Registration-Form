@@ -1,0 +1,176 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+body {
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #ffe985);
+  background-size: 400% 400%;
+  animation: animatedGradient 3s ease infinite;
+  color: #222;
+  font-family: 'Product Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Samsung Sharp Sans', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  background: linear-gradient(90deg, #ff5733, #ffea00, #33ff57, #00e1ff, #ff00e6);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+
+form{
+    width: 500px;
+    margin:0px auto;
+}
+fieldset{
+    border:10px solid #020024;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 52%, rgba(128, 0, 255, 1) 100%);
+    border-radius: 15px;
+}
+legend{
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+input[required]{
+    border: 2px solid rgb(125, 178, 213);
+    border-radius: 11px;
+    background-color: black;
+    color: white;
+}
+input[optional]{
+    border: 3px dashed rgb(87, 226, 87);
+    border-radius: 11px;
+    background-color: black;
+    color: white;
+}
+input:focus{
+    background-color: rgb(70, 9, 59);
+}
+input + p{
+    display: none;
+}
+input:hover + p{
+    display: inline;
+    background-color: rgb(1, 6, 70);
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+}
+input[type="radio"]:checked{
+    height: 20px;
+    width: 20px;
+}
+input[type="radio"]:checked + label{
+    font-size: 20px;
+    background-color: rgb(19, 24, 1);
+    border-radius: 10px;
+}
+select{
+    background-color: black;
+    border-radius: 10px;
+    font-family: 'Product Sans', sans-serif;
+}
+textarea{
+    resize: none;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+input[type="Email"] ~ img{
+    display: none;
+}
+input[type="Email"]:focus:valid ~ img#correct{
+    display: inline;
+    height: 15px;
+    width: 15px;
+}
+input[type="Email"]:focus:invalid ~ img#wrong{
+    display: inline;
+    height: 15px;
+    width: 15px;
+}
+input[type="Submit"]{
+    color: white;
+    border-radius: 5px;
+    border-color: yellowgreen;
+
+}
+input[type="reset"]{
+    color: white;
+    border-radius: 5px;
+    border-color: red;
+}
+input[type="date"]{
+    color: rgb(147, 137, 137);
+}
+input[type="tap"]{
+    color: #180876;
+    font-size: small;
+    background-color: rgb(202, 226, 153);
+}
+@keyframes gradientGlow {
+  0% {
+    border-image-source: linear-gradient(45deg, #ff0057, #00ffd5);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #00ffd5, #ff00cc);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #ff0057, #00ffd5);
+  }
+}
+
+fieldset {
+  border: 6px solid;
+  border-radius: 15px;
+  border-image-slice: 1;
+  border-width: 4px;
+  animation: gradientGlow 5s linear infinite;
+  border-image-source: linear-gradient(45deg, #ff0057, #00ffd5);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 5px #0ff;
+  }
+  50% {
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 5px #0ff;
+  }
+}
+input,
+textarea,
+select {
+  background-color: black;
+  border: 2px solid #0ff;
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+}
+@keyframes shine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            background-color: none;
+            color: #00FFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+     <form action="https://chatgpt.com/">
+    <fieldset>
+        <legend>Personal Details</legend><br>
+   
+        <table>
+            <tr>
+                <td><label for="">First Name</label></td>
+                <td><input type="Name" placeholder="Ex: Abhinav" required><p>Enter your Name</p></td>
+            </tr>
+            <tr>
+                <td><label for="">Surname</label></td>
+                <td><input type="Surname" placeholder="Ex: A" name="last name" optional><br/></td>
+            </tr>
+            <tr>
+                <td><label for="">Mobile Number</label></td>
+                <td><input type="tel" placeholder="xxxxxxxxxx" name="Mob"  required><p>Enter your Mobile Number</p><br/></td>
+            </tr>
+                <tr>
+                <td><label for="">Email</label></td>
+                <td>
+                    <input type="Email" placeholder="Ex: abhi@gmail.com" name="email" required>
+                    <img src="./tickmark.jpeg" alt="" id="correct">
+                    <img src="./crossmark.jpeg" alt="" id="wrong">
+                </td>
+            </tr>
+                <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" placeholder="min 8 characters" name="password" required><p>Enter the password</p></td>
+            </tr>
+                <tr>
+                <td><label for="">Confirm Password</label></td>
+                <td><input type="password" placeholder="min 8 characters" name="confirm password" required></td>
+            </tr>
+            <tr>
+                <td><label for="">DOB</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="">AGE</label></td>
+                <td><input type="number" name="age" required min="18" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td>
+                    <input type="radio" name="Gender" value="Male"><label>Male</label>
+                    <input type="radio" name="Gender" value="Female">Female
+                    <input type="radio" name="Gender" value="Others">Others
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Select <br>Country</label></td>
+                <td>    
+                    <select name="Country" id="">
+                        <option value="">India</option>
+                        <option value="">China</option>
+                        <option value="">USA</option>
+                        <option value="">Germany</option>
+                        <option value="">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Upload Resume</label></td>
+                <td><input type="file" name="File"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" name="Reset"></td>
+            </tr>
+            
+        </table>
+    </fieldset>
+    </form>
+    <br>
+    <form>
+    <fieldset>
+        <legend>Course Details</legend><br>
+        <tr>
+                <td><label for="">Select Course</label><br/></td>
+                <td>
+                    <select name="Course" id="">
+                        <option value="Full Stack">Full Stack Development</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Mern Stack">Mern Stack Development</option>
+                        <option value="Software Testing">Software Testing</option>
+                    </select><br>
+                </td>
+                <br/>
+            </tr>
+            <tr>
+                <td><label for="">Delivery Mode</label></td>
+                <td>
+                    <input type="radio" name="mod" id="" value="Online">Online
+                    <input type="radio" name="mod" id="" value="Offline">Offline <br/><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">INSTITUTE NAME</label></td>
+                <td><input type="tap" value="TAP ACADEMY" readonly><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Comments</label></td><br/>
+                <td><textarea name="" id="" cols="55" rows="5"></textarea></td>
+            </tr>
+    </fieldset>
+    <input type="Submit" name="" id="">
+    </form>
+</body>
+</html>
